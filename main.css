@@ -1,0 +1,495 @@
+/*fix the following:
+1. add "hello world"
+2. change a better font
+3. add @media for about me text to fix margin when mobile size
+4. fix height of portfolio
+*/
+.container-fluid{
+    height:60px;
+    text-align: center;
+}
+.navbar-brand{
+    font-family: cursive;
+    font-weight: 500;
+    font-size:25px;
+    height:50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.navbar-nav li a{
+    font-size: 18px;
+    height:50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+/*Cover Page*/
+.cover{
+    text-align: center;
+    height:700px;
+    background-attachment: scroll;
+    position:relative;
+    z-index:-1;
+    
+}
+
+.cover-image{
+    background: url(./bakground.jpg) no-repeat center center fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    box-sizing:border-box;
+    text-align: center;
+    background-size: cover;
+    height:100%;
+    opacity: 0.8;
+    background-attachment: scroll;
+    z-index: -1;
+}
+
+.cover-text{
+    padding-top: 140px;
+    padding-bottom: 200px;
+
+}
+.cover-intro{
+    font-family: "Droid Serif","Helvetica Neue";
+    font-size: 180px;
+    margin-bottom: 25px;
+    color:white;
+    box-sizing: content-box;
+    position: relative;
+    top:0px;
+    
+}
+.cover-nameis{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: -20px;
+    letter-spacing: -1px;
+}
+.cover-name{
+    font-family: "Droid Serif","Helvetica Neue";
+    font-style: bold;
+    font-size: 60px;
+    margin-top: 5px;
+    font-stretch: expanded;
+    color: #7EBBF5;
+    letter-spacing: -1px;
+}
+/*@Media*/
+
+@media only screen and (max-width:700px){
+.cover-intro {
+    font-style:normal;
+    font-weight: 500;
+    font-size: 110px;
+    margin-bottom: 25px;
+   
+}
+    .cover-name{
+        font-size: 40px;
+    }
+}
+/* End of Cover Page*/
+
+
+/*About Page*/
+.about{
+    float:left;
+    padding-bottom: 50px;
+}
+.prof_pic{
+    text-align: center center;
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 80px;
+    
+}
+.col-md-6{
+    padding-top: 70px;
+    text-align: center; 
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 0px;
+}
+.about-text{
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom: 30px;
+    
+}
+h1{
+    font-family:fantasy;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+p{
+    font-family:sans-serif;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: left;
+}
+
+/*End of About Page*/
+
+/*Portfoilo Page*/
+
+.portfolio-wrapper{
+    margin-top:20px;
+    background-color: lightgrey;
+    
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+h3{
+    font-family:cursive;
+}
+
+.portfolio-item{
+    margin-top: 20px;
+
+}
+.portfolio-caption{
+    background-color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.portfolio-caption h4{
+    font-family: monospace;
+    font-size: 21px;
+    font-weight: 600;
+}
+.portfolio-caption p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.img-responsive{
+    height:250px;
+    width:100%;
+}
+
+.portfolio-hover-content {
+  background-color: rgba(211,211,211,0.8);
+  padding: 10px;
+  position: absolute;
+  height:250px;
+  text-align: center;
+  display: none;
+  color: black;
+  
+
+}
+.portfolio-hover-content >*{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.portfolio-hover-content .portfolio-info{
+    font-size:18px;
+}
+.portfolio-tool {
+    font-size:15px;   
+}
+.portfolio-item a:hover .portfolio-hover-content {
+  display: block;
+}
+@media only screen and (max-width: 768px){
+    .portfolio-item .img-responsive{
+        
+        padding-left: 80px;
+        padding-right: 80px;  height:400px;
+        
+    }
+    .portfolio-caption{
+        margin-left: 80px;
+        margin-right: 80px;
+        height:100px;
+        
+    }
+    .portfolio-caption h4{
+        font-size: 25px
+    }
+    .portfolio-hover-content{
+        padding-top: 15px;
+        padding-bottom: 0px;
+        padding-left: 80px;
+        padding-right: 80px;  height:400px;
+    }
+    .portfolio-hover-content>*{
+        margin: 30px;
+        font-size: 22px;
+    }
+    
+    .portfolio-hover-content .portfolio-info{
+    font-size:24px;
+    }
+    .portfolio-tool {
+        font-size:22px;   
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .portfolio-item .img-responsive{
+       padding-left: 20px;
+        padding-right: 20px;  height:350px;
+        
+    }
+    .portfolio-caption{
+        margin-left: 20px;
+        margin-right: 20px;
+        height:100px;
+       
+    }
+    
+    .portfolio-caption h4{
+        font-size: 25px
+    }
+    .portfolio-hover-content{
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 40px;
+        padding-right: 40px;  height:350px;
+    }
+    .portfolio-hover-content>*{
+        margin: 0px;
+        font-size: 20px;
+    }
+    
+    .portfolio-hover-content .portfolio-info{
+    font-size:24px;
+    }
+    .portfolio-tool {
+        font-size:22px; 
+        margin-top: 20px;
+    }
+
+}
+ 
+/*End of Portfolio Page*/
+
+/*Experience page*/
+.experience-wrapper{
+    padding-top: 80px;
+    padding-bottom: 150px;
+    
+}
+
+.timeline {
+  list-style: none;
+  margin-top: 80px;
+  position: relative;
+  text-align: center;
+padding-left:40px;
+padding-right: 40px;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #ddd;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline-panel {
+  width: 40%;
+  float: left;
+  padding: 0 20px 0 20px;
+  position: relative;
+  text-align: right;
+}
+
+.timeline > li .img-circle
+{
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+
+.timeline-heading, .timeline-body p{
+    text-align: right;
+}
+.timeline-inverted .timeline-heading{
+    text-align: left;
+}
+.timeline-inverted .timeline-body p{
+    text-align: left;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.timeline-date h4{
+    position: relative;
+    top: 50px;
+    font-family: monospace;
+    float: right;
+    width: 40%;
+    text-align: left;   
+    color: black;
+
+}
+.timeline-inverted .timeline-date h4{
+    position: relative;
+    top: 50px;
+    font-family: monospace;
+    float:left;
+    width: 40%;
+    text-align: right; 
+}
+.timeline-body p{
+    font-size: 15px;
+    
+}
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 10px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+.img-circle h6{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: monospace;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.experience-date-mobile{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .timeline > li .img-circle {
+        left: 20%;
+        width: 100px;
+        height: 100px;
+    }
+    .timeline:before {
+        left: 20%;
+        margin-left:5px;
+}
+
+  .timeline-panel{
+  width: 60%;
+  float: left;
+  
+  padding: 0 20px 0 20px;
+  position: relative;
+  float: right;
+  text-align: left;
+  }
+  .timeline-body p{
+    font-size: 15px;
+    text-align: left;
+}
+    .timeline-heading h4{
+        text-align: left
+    }
+  
+    .timeline-inverted timeline-panel{
+        left:0px;
+        
+    }
+    .timeline-date{
+        display: list-item;
+        width:40%;
+        left:0%;
+        position: absolute;
+        text-align: left;
+        
+        
+    }
+    .timeline-date h4{
+        display: none;
+    }
+    .img-circle h6{
+      top:3px;
+      font-size: 15px;  
+    }
+    .experience-date-mobile{
+    display: block;
+    margin: 0px;
+    font-size: 15px;
+}
+}
+    
+
+/*End of Experience page*/
+
+/*Contact*/
+.contact-wrapper{
+    background-color: lightgray;
+    padding-top:80px;
+    padding-bottom: 80px;
+    text-align: center;
+    
+}
+.social-icon i{
+    text-align: center center;
+    margin-top: 0px;
+}
+.social-icon>a{
+    margin:20px;
+    color:black;
+    text-align: center;
+}
+.social-icon a{
+    text-decoration: none !important;
+} 
+
+

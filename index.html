@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Emily Chen</title>
+
+  
+    
+       
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./hover-min.css">
+    
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">Emily Chen</a>
+            </div><!-- End NavBar-Header-->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#top">Home</a></li>
+                  <li><a href="#About">About</a></li>
+                  <li><a href="#Portfolio">Portfolio</a></li>
+                  <li><a href="#Experiences">Experineces</a></li>
+                  <li><a href="./resume.pdf">Resume</a></li>
+                  <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div> <!-- End of Nav-bar collapse-->
+        </div> <!-- End Container-->
+      </nav><!-- End NavBar-->
+      
+    <div id="top"></div>
+    <!-- The Cover Page -->  
+     <div class="cover">
+      <div class="container">
+         <div class="cover-text">
+             <div class="cover-intro">HELLO</div>
+             <div class="cover-nameis">My Name Is <br> </div>
+             <div class="cover-name">EMILY CHEN</div>
+         </div> 
+      </div>
+      <div class="cover-image"></div>
+    </div><!-- end of cover>
+      
+      
+     <!-- About Page -->  
+     <div id="About"></div>
+     <div class="container">
+            <div class="col-md-6">
+            <img src="./profile_pic.jpg" class="prof_pic">
+            </div>
+            <div class="col-md-6">
+            <div class= "about-text">
+            <h1>ABOUT</h1>
+                <p>My name is Emily Chen. I was born in China, raised in Canada and schooled in America. I  currently studies Computer Science in UCLA.
+            <br><br>
+            I love taking challenges and transforming ideas into tangible products through coding. I am particular interetsted in User Interface, App development and Artificial Intellgencience. 
+            <br><br>
+            My other hobbies include violin, snowboarding, badminton and dance. They fulfill my daily life and also give me inspriations and different perspectives for work.
+            </p>
+            </div>
+            </div>
+    </div>
+     <!-- End of About Page --> 
+     
+      
+    <!-- Portfolio -->  
+    <section id="Portfolio"></section>
+    <div class="portfolio-wrapper">
+         <div class="container">
+            <div class="row">
+               <!--section header-->
+                <div class="col-lg-12 text-center">
+                    <h1 class="portfolio-heading">PORTFOLIO</h1>
+                    <h3 class="portfolio-subheading text-muted">Selected Projects.</h3>
+                </div>
+            </div>  <!-- end of section header-->
+            <div class="row">
+              
+               <!-- Micromouse-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#MM" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <p class="portfolio-info">A small robot that can explore, memorize, and solve a maze on itsown by optimizing for route and speed</p>
+                                <p class="portfolio-tool"><i class="fa fa-cogs" aria-hidden="true"></i> mbed,hardware,nucleo</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/micromouse.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Micromouse</h4>
+                        <p>A maze sloving robot</p>
+            
+                    </div>
+                </div> <!-- end of MM -->
+                
+                
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <p class="portfolio-info">A website I created to showcase my projects and creations in greater details. My place to express my other interests and thoughts. </p>
+                                <p class="portfolio-tool"><i class="fa fa-cogs" aria-hidden="true"></i> Javascript, Bootstrap, HTML,CSS </p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/personal_page.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Personal Webpage</h4>
+                        <p class="text-muted">Know more about me!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                               <p class="portfolio-info">A social chat application built for communicating with
+                                fellow students over the web</p>
+                                <p class="portfolio-tool"><i class="fa fa-cogs" aria-hidden="true"></i> javaScript, Node.js, Express,
+                                MongoDB, Heroku</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/BruinMessenger.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>BruinMessenger</h4>
+                        <p class="text-muted">A social chat website</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <p class="portfolio-info">A teddy bear integrated speaker and raspberry pi that can talk and give out UCLA trivia</p>
+                                <p class="portfolio-tool"><i class="fa fa-cogs" aria-hidden="true"></i> Amazon Alexia, Resberry Pi</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/teddy_bear.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Talking Teddy Bear</h4>
+                        <p class="text-muted">A responsive teddy</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <p class="portfolio-info">A self driven lego car that takes commands from serial connection and can send back feedbacks based on surrounding environments </p>
+                                <p class="portfolio-tool"><i class="fa fa-cogs" aria-hidden="true"></i> 9DOF sensor, Linux, Intel Edsion</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Lot%20Car.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lot Car</h4>
+                        <p class="text-muted">Remote controlled lego car</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                           <div class="portfolio-hover-content">
+                                <p class="portfolio-info">Researched and presented on “Analysis of George
+                                Laurenceʼs Subcritical Uranium Pile using Reactor Physics
+                                Codes” in National Research Council. </p>
+                                <p class="portfolio-tool"><i class="fa fa-cogs" aria-hidden="true"></i> MCNP</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/AECL.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>AECL</h4>
+                        <p class="text-muted">Analysis on nuclear reactor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Portfolio Page -->  
+      
+      
+    <!--Experience Page-->
+    <div id="Experiences"></div>
+    <div class="experience-wrapper">
+     <div class="row">
+                <div class="col-lg-12">
+                   <div class="row">
+               <!--section header-->
+                        <div class="col-lg-12 text-center">
+                            <h1 class="experience-heading">Experineces</h1>
+                            <h3>My journey.</h3>
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="timeline">
+                                <li>
+                                   
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/experience/ACM_hack.png" >
+                                    </div>
+                                    <div class="timeline-date">
+                                        <h4>Sep 2016 - Present</h4>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4><b>ACM Hack</b> </h4>
+                                            <h4 class="subheading">Software Intern</h4>  
+                                            <p class="experience-date-mobile">Sep 2016 - Present</p> 
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">I am responsible for building internal tools to mangage hack school and rebuilt
+                                            ACM Hack website as well as maintaining current website.  During the process, I learned technologies, such as android, to teach and
+                                            mentor other students</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/experience/SUSPRUCE.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-date">
+                                        <h4>Aug 2016 - Sep 2016</h4>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4><b>SKSPRUCE</b></h4>
+                                            <h4 class="subheading">Project Managment Intern</h4>
+                                            <p class="experience-date-mobile">Aug 2016 - Sep 2016</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">I joined project mangemnt team and  researched the current
+market of carrier-class Wi-Fi. I also participated in planning and managing of Wi-Fi
+installation in various environments</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/experience/NSTP.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-date">
+                                        <h4>Mar 2016 - Sep 2016</h4>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4><b>UCLA New Student and Transition Program</b></h4>
+                                            <h4 class="subheading">New Student Advisor</h4>
+                                            <p class="experience-date-mobile">Mar 2016 - Aug 2016</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted"> As a New Student Advisor, I was responsible for over 100  incoming first-year and transfer students and introduced them to all the services and academic opportunities available at UCLA on behalf of Henry Samueli School of Engineering. I also provided individual counselling, facilitated discussions, and made workshop regarding academic environment, sexual violence, alcohol abuse and services at UCLA
+<br></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/experience/AECL.jpeg" alt="">
+                                    </div>
+                                    <div class="timeline-date">
+                                        <h4>Jun 2014 - Aug 2014</h4>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4><b>Atomic Energy of Canada Limited</b></h4>
+                                            <h4 class="subheading">Researcher</h4>
+                                            <p class="experience-date-mobile">Jun 2014 - Aug 2014</p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted"> I had the honor to work in Atomic Energy of Canada Limited, Canada's largest nuclear science and technology laboratory. My team took on original research project and used Monte Carlo N-Particle Transport Code (MCNP) to model the predecessor of worldʼs first nuclear reactor</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="img-circle">
+                                        <h6>Journey <br>Starts <br>Now</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+     
+                 </div>
+         </div>
+        </div>
+    </div><!--End of Experience Page-->  
+     
+     
+    <!--Contact Page-->  
+    <div id="Contact"></div>
+    <div class="contact-wrapper">
+       <div class= "container ">
+        <h1>Contact</h1>
+        <div class="social-icon  ">
+        <a class="hvr-float" href="https://github.com/EmilyyC">
+               <i class="fa fa-github fa-3x" aria-hidden="true"></i> 
+        </a>
+        
+         <a class="hvr-float"
+              href="mailto:emilyqychen@ucla.edu">
+               <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+        </a>
+        
+        <a class="hvr-float" href="https://ca.linkedin.com/in/emilyqychen">
+        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+        </a>
+        
+        <a class="hvr-float" href="https://www.facebook.com/emily.cqy">
+               <i class="fa fa-facebook fa-3x " aria-hidden="true"></i>
+        </a>
+        </div>
+    
+        </div>
+    </div>
+    
+    <!-- End of Contact Page-->  
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="main.js"></script>
+  </body>
+</html>
