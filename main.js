@@ -7,7 +7,5 @@ $(document).ready(function(){
 });
 
     
-.about-btn{
 
-}
 });
