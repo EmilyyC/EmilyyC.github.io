@@ -23,6 +23,14 @@
     padding-top: 20px;
     font-family: monospace;
 }
+
+.navbar-default .navbar-nav>li>a:hover{
+    color:black;
+    background-color: gainsboro;
+}
+.navbar-nav li a{
+    background-color: white;
+}
 /*Cover Page*/
 .cover{
     text-align: center;
@@ -80,6 +88,22 @@
     color: #7EBBF5;
     letter-spacing: -1px;
 }
+.cover-btn-resume{
+   position: relative;
+    margin: 0px;
+    background-color: transparent;
+    border-radius: 5px;
+    color:white;
+    border-width: 2px;
+    box-shadow: none;
+    font-size: 20px;
+}
+.cover-btn-about{
+    margin-top: 20px;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+}
 /*@Media*/
 
 @media only screen and (max-width:700px){
@@ -90,6 +114,22 @@
     font-style:normal;
     font-weight: 500;
     font-size: 110px;
+    margin-bottom: 25px;
+   
+}
+    .cover-name{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .cover{
+        height:500px;
+    }
+    .cover-intro {
+    font-style:normal;
+    font-weight: 520;
+    font-size: 80px;
     margin-bottom: 25px;
    
 }
@@ -131,6 +171,15 @@ h1{
     font-size: 45px;
     letter-spacing: 5px;
 }
+
+@media only screen and (max-width: 420px)
+{
+    h1{
+        font-size:35px;
+        
+    }
+}
+
 p{
     font-family:sans-serif;
     margin-top: 30px;
@@ -143,6 +192,14 @@ p{
 {
     .prof_pic{
         margin-top: 20px;
+        
+    }
+}
+@media only screen and (max-width:400px)
+{
+    .prof_pic{
+        margin-top: 20px;
+        height: 250px;
         
     }
 }
@@ -251,7 +308,7 @@ h3{
     }
 
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
     .portfolio-item .img-responsive{
        padding-left: 20px;
         padding-right: 20px;  height:350px;
@@ -287,6 +344,47 @@ h3{
     }
 
 }
+
+@media only screen and (max-width: 420px){
+    .portfolio-item .img-responsive{
+       padding-left: 20px;
+        padding-right: 20px;  height:300px;
+        
+    }
+    .portfolio-caption{
+        margin-left: 20px;
+        margin-right: 20px;
+        height:100px;
+       
+    }
+    
+    .portfolio-caption h4{
+        font-size: 20px
+    }
+    .portfolio-caption p{
+        font-size: 14px
+    }
+    .portfolio-hover-content{
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 40px;
+        padding-right: 40px;  height:300px;
+    }
+    .portfolio-hover-content>*{
+        margin: 0px;
+        font-size: 20px;
+    }
+    
+    .portfolio-hover-content .portfolio-info{
+    font-size:18px;
+    }
+    .portfolio-tool {
+        font-size:16px; 
+        margin-top: 20px;
+    }
+
+}
+ 
  
 /*End of Portfolio Page*/
 
@@ -480,7 +578,6 @@ padding-right: 40px;
     font-size: 15px;
 }
 }
-    
 
 /*End of Experience page*/
 
@@ -504,5 +601,12 @@ padding-right: 40px;
 .social-icon a{
     text-decoration: none !important;
 } 
+@media only screen and (max-width: 420px)
+{
+    .social-icon>a{
+        margin:10px;
+        
+    }
+}
 
 
