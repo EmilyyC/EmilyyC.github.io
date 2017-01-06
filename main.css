@@ -21,6 +21,7 @@
     height:50px;
     padding-bottom: 20px;
     padding-top: 20px;
+    font-family: monospace;
 }
 /*Cover Page*/
 .cover{
@@ -53,12 +54,13 @@
 
 }
 .cover-intro{
-    font-family: "Droid Serif","Helvetica Neue";
+    font-family:sans-serif;
     font-size: 180px;
     margin-bottom: 25px;
     color:white;
     box-sizing: content-box;
     position: relative;
+    letter-spacing: 2px;
     top:0px;
     
 }
@@ -67,9 +69,10 @@
     color: whitesmoke;
     margin-top: -20px;
     letter-spacing: -1px;
+    font-family: fantasy
 }
 .cover-name{
-    font-family: "Droid Serif","Helvetica Neue";
+    font-family: fantasy;
     font-style: bold;
     font-size: 60px;
     margin-top: 5px;
@@ -80,7 +83,10 @@
 /*@Media*/
 
 @media only screen and (max-width:700px){
-.cover-intro {
+    .cover{
+        height:500px;
+    }
+    .cover-intro {
     font-style:normal;
     font-weight: 500;
     font-size: 110px;
@@ -132,6 +138,13 @@ p{
     font-weight: 300;
     font-size: 17px;
     text-align: left;
+}
+@media only screen and (max-width:991px)
+{
+    .prof_pic{
+        margin-top: 20px;
+        
+    }
 }
 
 /*End of About Page*/
