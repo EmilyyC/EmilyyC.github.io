@@ -4,24 +4,40 @@
 3. add @media for about me text to fix margin when mobile size
 4. fix height of portfolio
 */
-.container-fluid{
+.my-navbar{
     height:60px;
     text-align: center;
+    background-color:transparent;
+    color: white;
+}
+.navbar-toggle .icon-bar{
+    background-color: white;
+}
+.navbar-nav>li>a:hover{
+    color:black;
+}
+.navbar-brand:hover{
+    color:#7EBBF5;
+}
+.container-fluid{
+    background-color: inherit;
 }
 .navbar-brand{
-    font-family: cursive;
+    
+    font-family: fantasy;
     font-weight: 500;
     font-size:25px;
-    height:50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    margin-top: 10px;
+    color: inherit;
 }
+
 .navbar-nav li a{
     font-size: 18px;
     height:50px;
     padding-bottom: 20px;
     padding-top: 20px;
-    font-family: monospace;
+    font-family: sans-serif;
+    color: inherit;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
@@ -29,16 +45,18 @@
     background-color: gainsboro;
 }
 .navbar-nav li a{
-    background-color: white;
+    height:60px;
+    background-color: inherit;
 }
+
+
 /*Cover Page*/
+
 .cover{
     text-align: center;
-    height:700px;
+    height:800px;
     background-attachment: scroll;
     position:relative;
-    z-index:-1;
-    
 }
 
 .cover-image{
@@ -54,19 +72,21 @@
     opacity: 0.8;
     background-attachment: scroll;
     z-index: -1;
+    min-height: 800px;
 }
 
 .cover-text{
-    padding-top: 140px;
-    padding-bottom: 200px;
+    padding-top: 130px;
+   
 
 }
 .cover-intro{
     font-family:sans-serif;
-    font-size: 180px;
+    font-size: 220px;
     margin-bottom: 25px;
     color:white;
     box-sizing: content-box;
+    font-weight: 500;
     position: relative;
     letter-spacing: 2px;
     top:0px;
@@ -90,27 +110,33 @@
 }
 .cover-btn-resume{
    position: relative;
-    margin: 0px;
-    background-color: transparent;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #C6C3C7;
     border-radius: 5px;
     color:white;
     border-width: 2px;
     box-shadow: none;
     font-size: 20px;
-    display: ;
+    background-color: rgba(198,195,199,0.3);
+    font-family: fantasy;
+    
+}
+.cover-btn-resume:hover {
+    color:white;
 }
 .cover-btn-about{
-    margin-top: 20px;
-    color: white;
+    margin-top: 40px;
     border-width: 2px;
-    border-color: white;
-    display:none;
+    
 }
+
 /*@Media*/
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:750px){
     .cover{
-        height:500px;
+        height:550px;
     }
     .cover-intro {
     font-style:normal;
@@ -122,11 +148,22 @@
     .cover-name{
         font-size: 40px;
     }
+    .cover-image{
+    min-height: 550px;
+        
+    
+}
+
+
 }
 
 @media only screen and (max-width:400px){
     .cover{
         height:500px;
+    }
+     .cover-image{
+        min-height: 500px;
+         max-height: 500px;
     }
     .cover-intro {
     font-style:normal;
@@ -144,15 +181,15 @@
 
 
 /*About Page*/
-.about{
-    float:left;
+.about-wrapper{
+   
     padding-bottom: 50px;
 }
 .prof_pic{
     text-align: center center;
     border-radius: 50%;
     height: 300px;
-    margin-top: 80px;
+   
     
 }
 .col-md-6{
@@ -161,7 +198,9 @@
     padding-left: 20px;
     padding-right:20px;
     padding-bottom: 0px;
+   
 }
+
 .about-text{
     margin-left:0px;
     margin-right:0px;
@@ -212,14 +251,16 @@ p{
 /*Portfoilo Page*/
 
 .portfolio-wrapper{
-    margin-top:20px;
+    
     background-color: lightgrey;
     
     padding-top: 80px;
     padding-bottom: 50px;
 }
 h3{
-    font-family:cursive;
+    font-family:fantasy;
+    font-style: italic;
+    
 }
 
 .portfolio-item{
@@ -235,7 +276,7 @@ h3{
     
 }
 .portfolio-caption h4{
-    font-family: monospace;
+    font-family: fantasy;
     font-size: 21px;
     font-weight: 600;
 }
@@ -463,26 +504,30 @@ padding-right: 40px;
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
-  font-family: monospace;
+  font-family: sans-serif;
   font-weight: 500;
   font-size: 20px;
+  font-style: normal;
 }
 
 .timeline-date h4{
     position: relative;
     top: 50px;
-    font-family: monospace;
+    font-family: fantasy;
     float: right;
     width: 40%;
     text-align: left; 
     padding-left: 20px;
     color: black;
+    font-size: 22px;
+    font-weight: 600;
+    
 
 }
 .timeline-inverted .timeline-date h4{
     position: relative;
     top: 50px;
-    font-family: monospace;
+    font-family: fantasy;
     float:left;
     width: 40%;
     text-align: right; 
@@ -520,7 +565,7 @@ padding-right: 40px;
 .img-circle h6{
     font-size: 20px;
     line-height: 1.5;
-    font-family: monospace;
+    font-family: fantasy;
     position: relative;
     top: 10px;
     text-align: center;

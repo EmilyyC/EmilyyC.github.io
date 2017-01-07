@@ -23,8 +23,8 @@
   <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
-        <div class="container-fluid">
+    <nav class="navbar navbar-fixed-top my-navbar">
+        <div class="container-fluid ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="icon-bar"></span>
@@ -35,12 +35,12 @@
             </div><!-- End NavBar-Header-->
             <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                  <li><a href="#top">Home</a></li>
-                  <li><a href="#About">About</a></li>
-                  <li><a href="#Portfolio">Portfolio</a></li>
-                  <li><a href="#Experiences">Experiences</a></li>
-                  <li><a href="./resume.pdf">Resume</a></li>
-                  <li><a href="#Contact">Contact</a></li>
+                  <li><a class="navbar-element-slide" href="#top">Home</a></li>
+                  <li><a class="navbar-element-slide" href="#About">About</a></li>
+                  <li><a class="navbar-element-slide" href="#Portfolio">Portfolio</a></li>
+                  <li><a class="navbar-element-slide" href="#Experiences">Experiences</a></li>
+                  <li><a class="navbar-element-slide" href="./resume.pdf">Resume</a></li>
+                  <li><a class="navbar-element-slide" href="#Contact">Contact</a></li>
                 </ul>
             </div> <!-- End of Nav-bar collapse-->
         </div> <!-- End Container-->
@@ -55,13 +55,9 @@
              <div class="cover-nameis">My Name Is <br> </div>
              <div class="cover-name">EMILY CHEN</div>
              <div class="cover-btn">
-               <a href="./resume.pdf" class="btn cover-btn-resume ">resume</a>
-               
-             
-             <div class="cover-btn-about">
-             <a href="#About" class="btn" ><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
-
-          </div>
+               <a href="./resume.pdf" class="btn cover-btn-resume hvr-pulse  ">resume</a>
+               <a href="#About" class="btn cover-btn-resume cover-btn-abt hvr-pulse  ">about me</a>
+              </div>
           </div>
          </div> 
         
@@ -72,6 +68,7 @@
       
      <!-- About Page -->  
      <div id="About"></div>
+     <div class="about-wrapper">
      <div class="container">
             <div class="col-md-6">
             <img src="./profile_pic.jpg" class="prof_pic">
@@ -89,7 +86,7 @@
             
             </div>
     </div>
-     <!-- End of About Page --> 
+     </div><!-- End of About Page --> 
      
       
     <!-- Portfolio -->  
